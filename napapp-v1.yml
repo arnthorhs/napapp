@@ -62,8 +62,6 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: STATS_SERVICE_URL
-              value: http://stats-service:3000
             - name: MONGO_URL
               valueFrom:
                 secretKeyRef:
